@@ -1,0 +1,21 @@
+<!--
+    Unfunctional subdomains:
+	    - $
+
+    More rulesets for sites by Mirco Neubert:
+        - Dynavision.de
+	    - Dynatech.de
+		
+-->
+<ruleset name="Dynavision.de">
+    <target host="www.dynavision.de" />
+
+    <securecookie host="^www\.dynavision\.de" name=".+" />
+
+ 	<!-- Redirect broken domain -->
+    <rule from="^http(s)?://dynavision.de"
+            to="https://www.dynavision.de" />
+	
+   <rule from="^http:"
+            to="https:" />
+</ruleset>
